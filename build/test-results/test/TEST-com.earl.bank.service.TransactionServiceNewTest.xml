@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.earl.bank.service.TransactionServiceNewTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-07-10T01:04:35" hostname="PCRAFA" time="6.112">
+  <properties/>
+  <testcase name="CT-UNITARIO-03: Transacao com descricao nula deve ser rejeitada ou tratada sem NullPointerException" classname="com.earl.bank.service.TransactionServiceNewTest" time="1.718"/>
+  <testcase name="CT-UNITARIO-02: Transacao com valor zero deve lancar InvalidAmountException" classname="com.earl.bank.service.TransactionServiceNewTest" time="2.088"/>
+  <testcase name="CT-UNITARIO-01: Saque com valor exatamente igual ao saldo disponivel nao deve lancar excecao" classname="com.earl.bank.service.TransactionServiceNewTest" time="2.297"/>
+  <system-out><![CDATA[2026-07-09 22:04:35.893  INFO 30216 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.earl.bank.service.TransactionServiceNewTest], using SpringBootContextLoader
+2026-07-09 22:04:35.899  INFO 30216 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.earl.bank.service.TransactionServiceNewTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2026-07-09 22:04:35.900  INFO 30216 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.earl.bank.service.TransactionServiceNewTest]: TransactionServiceNewTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-07-09 22:04:35.901  INFO 30216 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.earl.bank.BankApplication for test class com.earl.bank.service.TransactionServiceNewTest
+2026-07-09 22:04:35.902  INFO 30216 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2026-07-09 22:04:35.902  INFO 30216 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@68344a08, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3968e955, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@3c9e2526, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@469dfbf7, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@cb38d26, org.springframework.test.context.support.DirtiesContextTestExecutionListener@72efffa4, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3f1543ca, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@167e559c, org.springframework.test.context.event.EventPublishingTestExecutionListener@6b420c8, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@b2bfd65, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1e35e4d9, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@7a838036, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@5d165dce, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@98243dc, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@38207d19]
+2026-07-09 22:04:35.909  INFO 30216 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Shutting down embedded database: url='jdbc:h2:mem:f9800687-0365-42d4-a01b-6eb34abac91f;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false'
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.6.7)
+
+2026-07-09 22:04:35.941  INFO 30216 --- [    Test worker] c.e.b.service.TransactionServiceNewTest  : Starting TransactionServiceNewTest using Java 21.0.7 on pcRafa with PID 30216 (started by rafae in C:\Users\rafae\Downloads\t2_verival\t2_verival)
+2026-07-09 22:04:35.941  INFO 30216 --- [    Test worker] c.e.b.service.TransactionServiceNewTest  : The following 1 profile is active: "test"
+2026-07-09 22:04:36.449  INFO 30216 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:c00c7628-0bfb-443c-8931-bd7d130f8b44;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2026-07-09 22:04:37.609  INFO 30216 --- [    Test worker] c.e.b.service.TransactionServiceNewTest  : Started TransactionServiceNewTest in 1.697 seconds (JVM running for 110.874)
+2026-07-09 22:04:37.636  INFO 30216 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Shutting down embedded database: url='jdbc:h2:mem:c00c7628-0bfb-443c-8931-bd7d130f8b44;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false'
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.6.7)
+
+2026-07-09 22:04:37.699  INFO 30216 --- [    Test worker] c.e.b.service.TransactionServiceNewTest  : Starting TransactionServiceNewTest using Java 21.0.7 on pcRafa with PID 30216 (started by rafae in C:\Users\rafae\Downloads\t2_verival\t2_verival)
+2026-07-09 22:04:37.699  INFO 30216 --- [    Test worker] c.e.b.service.TransactionServiceNewTest  : The following 1 profile is active: "test"
+2026-07-09 22:04:38.469  INFO 30216 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:769b2153-033e-4d7b-906a-87ca5b4a80ac;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2026-07-09 22:04:39.652  INFO 30216 --- [    Test worker] c.e.b.service.TransactionServiceNewTest  : Started TransactionServiceNewTest in 2.012 seconds (JVM running for 112.917)
+2026-07-09 22:04:39.732  INFO 30216 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Shutting down embedded database: url='jdbc:h2:mem:769b2153-033e-4d7b-906a-87ca5b4a80ac;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false'
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.6.7)
+
+2026-07-09 22:04:39.844  INFO 30216 --- [    Test worker] c.e.b.service.TransactionServiceNewTest  : Starting TransactionServiceNewTest using Java 21.0.7 on pcRafa with PID 30216 (started by rafae in C:\Users\rafae\Downloads\t2_verival\t2_verival)
+2026-07-09 22:04:39.846  INFO 30216 --- [    Test worker] c.e.b.service.TransactionServiceNewTest  : The following 1 profile is active: "test"
+2026-07-09 22:04:40.539  INFO 30216 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:b5f92648-c05f-4b3f-9961-7d9fd0ca338a;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2026-07-09 22:04:41.946  INFO 30216 --- [    Test worker] c.e.b.service.TransactionServiceNewTest  : Started TransactionServiceNewTest in 2.204 seconds (JVM running for 115.211)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

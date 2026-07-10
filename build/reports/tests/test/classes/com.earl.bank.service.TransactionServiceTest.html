@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - TransactionServiceTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>TransactionServiceTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.earl.bank.service.html">com.earl.bank.service</a> &gt; TransactionServiceTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">28</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">58.380s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Method name</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">for currency EUR</td>
+<td class="success">createTransactionDeposit(Currency)[1]</td>
+<td class="success">2.028s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">for currency SEK</td>
+<td class="success">createTransactionDeposit(Currency)[2]</td>
+<td class="success">1.628s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">for currency GBP</td>
+<td class="success">createTransactionDeposit(Currency)[3]</td>
+<td class="success">2.374s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">for currency USD</td>
+<td class="success">createTransactionDeposit(Currency)[4]</td>
+<td class="success">1.981s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">for currency EUR and direction IN</td>
+<td class="success">createTransactionThrowsAccountNotFoundException(Currency, Direction)[1]</td>
+<td class="success">1.919s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">for currency EUR and direction OUT</td>
+<td class="success">createTransactionThrowsAccountNotFoundException(Currency, Direction)[2]</td>
+<td class="success">2.034s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">for currency SEK and direction IN</td>
+<td class="success">createTransactionThrowsAccountNotFoundException(Currency, Direction)[3]</td>
+<td class="success">2.255s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">for currency SEK and direction OUT</td>
+<td class="success">createTransactionThrowsAccountNotFoundException(Currency, Direction)[4]</td>
+<td class="success">2.204s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">for currency GBP and direction IN</td>
+<td class="success">createTransactionThrowsAccountNotFoundException(Currency, Direction)[5]</td>
+<td class="success">1.606s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">for currency GBP and direction OUT</td>
+<td class="success">createTransactionThrowsAccountNotFoundException(Currency, Direction)[6]</td>
+<td class="success">2.007s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">for currency USD and direction IN</td>
+<td class="success">createTransactionThrowsAccountNotFoundException(Currency, Direction)[7]</td>
+<td class="success">1.974s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">for currency USD and direction OUT</td>
+<td class="success">createTransactionThrowsAccountNotFoundException(Currency, Direction)[8]</td>
+<td class="success">2.166s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">for currency EUR</td>
+<td class="success">createTransactionThrowsInsufficientFundException(Currency)[1]</td>
+<td class="success">1.876s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">for currency SEK</td>
+<td class="success">createTransactionThrowsInsufficientFundException(Currency)[2]</td>
+<td class="success">1.641s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">for currency GBP</td>
+<td class="success">createTransactionThrowsInsufficientFundException(Currency)[3]</td>
+<td class="success">2.000s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">for currency USD</td>
+<td class="success">createTransactionThrowsInsufficientFundException(Currency)[4]</td>
+<td class="success">1.889s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">for currency EUR and direction IN</td>
+<td class="success">createTransactionThrowsInvalidAmountException(Currency, Direction)[1]</td>
+<td class="success">1.802s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">for currency EUR and direction OUT</td>
+<td class="success">createTransactionThrowsInvalidAmountException(Currency, Direction)[2]</td>
+<td class="success">2.508s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">for currency SEK and direction IN</td>
+<td class="success">createTransactionThrowsInvalidAmountException(Currency, Direction)[3]</td>
+<td class="success">2.285s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">for currency SEK and direction OUT</td>
+<td class="success">createTransactionThrowsInvalidAmountException(Currency, Direction)[4]</td>
+<td class="success">2.814s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">for currency GBP and direction IN</td>
+<td class="success">createTransactionThrowsInvalidAmountException(Currency, Direction)[5]</td>
+<td class="success">2.391s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">for currency GBP and direction OUT</td>
+<td class="success">createTransactionThrowsInvalidAmountException(Currency, Direction)[6]</td>
+<td class="success">2.549s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">for currency USD and direction IN</td>
+<td class="success">createTransactionThrowsInvalidAmountException(Currency, Direction)[7]</td>
+<td class="success">2.637s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">for currency USD and direction OUT</td>
+<td class="success">createTransactionThrowsInvalidAmountException(Currency, Direction)[8]</td>
+<td class="success">2.423s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">for currency EUR</td>
+<td class="success">createTransactionWithdraw(Currency)[1]</td>
+<td class="success">2.138s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">for currency SEK</td>
+<td class="success">createTransactionWithdraw(Currency)[2]</td>
+<td class="success">1.905s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">for currency GBP</td>
+<td class="success">createTransactionWithdraw(Currency)[3]</td>
+<td class="success">1.695s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">for currency USD</td>
+<td class="success">createTransactionWithdraw(Currency)[4]</td>
+<td class="success">1.651s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2026-07-09 22:04:42.025  INFO 30216 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.earl.bank.service.TransactionServiceTest], using SpringBootContextLoader
+2026-07-09 22:04:42.026  INFO 30216 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.earl.bank.service.TransactionServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2026-07-09 22:04:42.026  INFO 30216 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.earl.bank.service.TransactionServiceTest]: TransactionServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-07-09 22:04:42.027  INFO 30216 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.earl.bank.BankApplication for test class com.earl.bank.service.TransactionServiceTest
+2026-07-09 22:04:42.029  INFO 30216 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2026-07-09 22:04:42.029  INFO 30216 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3aea9e4, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2d25a125, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@71def98b, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3d352fb4, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4ba2507f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4b8eeca7, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4d9a46fc, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@59c69874, org.springframework.test.context.event.EventPublishingTestExecutionListener@3e0a9b, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@3c6935ef, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@23db2938, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@4e33000f, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3ea9b180, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@4b9a2df7, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@31725f55]
+2026-07-09 22:04:42.033  INFO 30216 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Shutting down embedded database: url='jdbc:h2:mem:b5f92648-c05f-4b3f-9961-7d9fd0ca338a;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false'
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.6.7)
+
+2026-07-09 22:04:42.062  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : Starting TransactionServiceTest using Java 21.0.7 on pcRafa with PID 30216 (started by rafae in C:\Users\rafae\Downloads\t2_verival\t2_verival)
+2026-07-09 22:04:42.063  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : The following 1 profile is active: &quot;test&quot;
+2026-07-09 22:04:42.656  INFO 30216 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:e94a2534-cd9f-47a4-a764-0e149c751f89;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2026-07-09 22:04:43.810  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : Started TransactionServiceTest in 1.772 seconds (JVM running for 117.076)
+2026-07-09 22:04:43.839  INFO 30216 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Shutting down embedded database: url='jdbc:h2:mem:e94a2534-cd9f-47a4-a764-0e149c751f89;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false'
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.6.7)
+
+2026-07-09 22:04:43.912  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : Starting TransactionServiceTest using Java 21.0.7 on pcRafa with PID 30216 (started by rafae in C:\Users\rafae\Downloads\t2_verival\t2_verival)
+2026-07-09 22:04:43.912  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : The following 1 profile is active: &quot;test&quot;
+2026-07-09 22:04:44.582  INFO 30216 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:ec5a5aa6-4dd9-4207-9163-4e127c8a65db;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2026-07-09 22:04:46.248  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : Started TransactionServiceTest in 2.395 seconds (JVM running for 119.513)
+2026-07-09 22:04:46.357  INFO 30216 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Shutting down embedded database: url='jdbc:h2:mem:ec5a5aa6-4dd9-4207-9163-4e127c8a65db;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false'
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.6.7)
+
+2026-07-09 22:04:46.397  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : Starting TransactionServiceTest using Java 21.0.7 on pcRafa with PID 30216 (started by rafae in C:\Users\rafae\Downloads\t2_verival\t2_verival)
+2026-07-09 22:04:46.397  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : The following 1 profile is active: &quot;test&quot;
+2026-07-09 22:04:47.257  INFO 30216 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:8252bffc-7726-410e-9e09-725c64a16347;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2026-07-09 22:04:48.581  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : Started TransactionServiceTest in 2.219 seconds (JVM running for 121.846)
+2026-07-09 22:04:48.637  INFO 30216 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Shutting down embedded database: url='jdbc:h2:mem:8252bffc-7726-410e-9e09-725c64a16347;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false'
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.6.7)
+
+2026-07-09 22:04:48.729  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : Starting TransactionServiceTest using Java 21.0.7 on pcRafa with PID 30216 (started by rafae in C:\Users\rafae\Downloads\t2_verival\t2_verival)
+2026-07-09 22:04:48.729  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : The following 1 profile is active: &quot;test&quot;
+2026-07-09 22:04:49.687  INFO 30216 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:8c5b8050-d369-49ac-86d5-56024bcf8ad7;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2026-07-09 22:04:51.415  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : Started TransactionServiceTest in 2.765 seconds (JVM running for 124.681)
+2026-07-09 22:04:51.467  INFO 30216 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Shutting down embedded database: url='jdbc:h2:mem:8c5b8050-d369-49ac-86d5-56024bcf8ad7;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false'
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.6.7)
+
+2026-07-09 22:04:51.556  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : Starting TransactionServiceTest using Java 21.0.7 on pcRafa with PID 30216 (started by rafae in C:\Users\rafae\Downloads\t2_verival\t2_verival)
+2026-07-09 22:04:51.558  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : The following 1 profile is active: &quot;test&quot;
+2026-07-09 22:04:52.341  INFO 30216 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:416a9cf1-0904-46ab-8ba1-24da3b281b7a;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2026-07-09 22:04:53.815  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : Started TransactionServiceTest in 2.336 seconds (JVM running for 127.08)
+2026-07-09 22:04:53.854  INFO 30216 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Shutting down embedded database: url='jdbc:h2:mem:416a9cf1-0904-46ab-8ba1-24da3b281b7a;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false'
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.6.7)
+
+2026-07-09 22:04:53.934  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : Starting TransactionServiceTest using Java 21.0.7 on pcRafa with PID 30216 (started by rafae in C:\Users\rafae\Downloads\t2_verival\t2_verival)
+2026-07-09 22:04:53.936  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : The following 1 profile is active: &quot;test&quot;
+2026-07-09 22:04:54.616  INFO 30216 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:6c6b45f3-4688-4d6d-8fda-8a5878a57806;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2026-07-09 22:04:56.343  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : Started TransactionServiceTest in 2.474 seconds (JVM running for 129.608)
+2026-07-09 22:04:56.399  INFO 30216 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Shutting down embedded database: url='jdbc:h2:mem:6c6b45f3-4688-4d6d-8fda-8a5878a57806;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false'
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.6.7)
+
+2026-07-09 22:04:56.439  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : Starting TransactionServiceTest using Java 21.0.7 on pcRafa with PID 30216 (started by rafae in C:\Users\rafae\Downloads\t2_verival\t2_verival)
+2026-07-09 22:04:56.440  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : The following 1 profile is active: &quot;test&quot;
+2026-07-09 22:04:57.287  INFO 30216 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:915a6732-9082-4b7a-bfbb-91e3aa858713;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2026-07-09 22:04:58.954  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : Started TransactionServiceTest in 2.551 seconds (JVM running for 132.219)
+2026-07-09 22:04:59.036  INFO 30216 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Shutting down embedded database: url='jdbc:h2:mem:915a6732-9082-4b7a-bfbb-91e3aa858713;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false'
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.6.7)
+
+2026-07-09 22:04:59.106  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : Starting TransactionServiceTest using Java 21.0.7 on pcRafa with PID 30216 (started by rafae in C:\Users\rafae\Downloads\t2_verival\t2_verival)
+2026-07-09 22:04:59.108  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : The following 1 profile is active: &quot;test&quot;
+2026-07-09 22:04:59.814  INFO 30216 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:011e0063-8232-4db3-8910-006bbf1679c5;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2026-07-09 22:05:01.440  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : Started TransactionServiceTest in 2.4 seconds (JVM running for 134.706)
+2026-07-09 22:05:01.477  INFO 30216 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Shutting down embedded database: url='jdbc:h2:mem:011e0063-8232-4db3-8910-006bbf1679c5;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false'
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.6.7)
+
+2026-07-09 22:05:01.549  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : Starting TransactionServiceTest using Java 21.0.7 on pcRafa with PID 30216 (started by rafae in C:\Users\rafae\Downloads\t2_verival\t2_verival)
+2026-07-09 22:05:01.550  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : The following 1 profile is active: &quot;test&quot;
+2026-07-09 22:05:02.200  INFO 30216 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:d30753a6-4305-4abf-abdd-3056191f2251;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2026-07-09 22:05:03.441  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : Started TransactionServiceTest in 1.96 seconds (JVM running for 136.706)
+2026-07-09 22:05:03.504  INFO 30216 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Shutting down embedded database: url='jdbc:h2:mem:d30753a6-4305-4abf-abdd-3056191f2251;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false'
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.6.7)
+
+2026-07-09 22:05:03.542  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : Starting TransactionServiceTest using Java 21.0.7 on pcRafa with PID 30216 (started by rafae in C:\Users\rafae\Downloads\t2_verival\t2_verival)
+2026-07-09 22:05:03.542  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : The following 1 profile is active: &quot;test&quot;
+2026-07-09 22:05:04.032  INFO 30216 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:59b66c77-a2af-43b5-96b2-544b6233d6c3;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2026-07-09 22:05:05.104  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : Started TransactionServiceTest in 1.594 seconds (JVM running for 138.37)
+2026-07-09 22:05:05.132  INFO 30216 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Shutting down embedded database: url='jdbc:h2:mem:59b66c77-a2af-43b5-96b2-544b6233d6c3;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false'
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.6.7)
+
+2026-07-09 22:05:05.183  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : Starting TransactionServiceTest using Java 21.0.7 on pcRafa with PID 30216 (started by rafae in C:\Users\rafae\Downloads\t2_verival\t2_verival)
+2026-07-09 22:05:05.184  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : The following 1 profile is active: &quot;test&quot;
+2026-07-09 22:05:06.163  INFO 30216 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:fe2c674d-ad76-453c-b3a9-6e829a54341e;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2026-07-09 22:05:07.426  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : Started TransactionServiceTest in 2.29 seconds (JVM running for 140.692)
+2026-07-09 22:05:07.507  INFO 30216 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Shutting down embedded database: url='jdbc:h2:mem:fe2c674d-ad76-453c-b3a9-6e829a54341e;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false'
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.6.7)
+
+2026-07-09 22:05:07.601  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : Starting TransactionServiceTest using Java 21.0.7 on pcRafa with PID 30216 (started by rafae in C:\Users\rafae\Downloads\t2_verival\t2_verival)
+2026-07-09 22:05:07.601  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : The following 1 profile is active: &quot;test&quot;
+2026-07-09 22:05:08.228  INFO 30216 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:480aeee5-0c84-41f0-b722-88f822dbcbc7;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2026-07-09 22:05:09.463  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : Started TransactionServiceTest in 1.952 seconds (JVM running for 142.728)
+2026-07-09 22:05:09.506  INFO 30216 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Shutting down embedded database: url='jdbc:h2:mem:480aeee5-0c84-41f0-b722-88f822dbcbc7;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false'
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.6.7)
+
+2026-07-09 22:05:09.562  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : Starting TransactionServiceTest using Java 21.0.7 on pcRafa with PID 30216 (started by rafae in C:\Users\rafae\Downloads\t2_verival\t2_verival)
+2026-07-09 22:05:09.564  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : The following 1 profile is active: &quot;test&quot;
+2026-07-09 22:05:10.177  INFO 30216 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:d34eba08-3993-4e37-bd09-f4a2a1347484;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2026-07-09 22:05:11.554  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : Started TransactionServiceTest in 2.042 seconds (JVM running for 144.819)
+2026-07-09 22:05:11.641  INFO 30216 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Shutting down embedded database: url='jdbc:h2:mem:d34eba08-3993-4e37-bd09-f4a2a1347484;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false'
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.6.7)
+
+2026-07-09 22:05:11.722  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : Starting TransactionServiceTest using Java 21.0.7 on pcRafa with PID 30216 (started by rafae in C:\Users\rafae\Downloads\t2_verival\t2_verival)
+2026-07-09 22:05:11.722  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : The following 1 profile is active: &quot;test&quot;
+2026-07-09 22:05:12.338  INFO 30216 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:76f1f728-3ecb-4306-8c0a-d5fe320cf9af;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2026-07-09 22:05:13.484  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : Started TransactionServiceTest in 1.84 seconds (JVM running for 146.75)
+2026-07-09 22:05:13.552  INFO 30216 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Shutting down embedded database: url='jdbc:h2:mem:76f1f728-3ecb-4306-8c0a-d5fe320cf9af;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false'
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.6.7)
+
+2026-07-09 22:05:13.586  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : Starting TransactionServiceTest using Java 21.0.7 on pcRafa with PID 30216 (started by rafae in C:\Users\rafae\Downloads\t2_verival\t2_verival)
+2026-07-09 22:05:13.586  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : The following 1 profile is active: &quot;test&quot;
+2026-07-09 22:05:14.136  INFO 30216 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:cba48869-c1b0-4dcc-825e-646aaef4947e;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2026-07-09 22:05:15.165  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : Started TransactionServiceTest in 1.609 seconds (JVM running for 148.43)
+2026-07-09 22:05:15.247  INFO 30216 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Shutting down embedded database: url='jdbc:h2:mem:cba48869-c1b0-4dcc-825e-646aaef4947e;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false'
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.6.7)
+
+2026-07-09 22:05:15.326  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : Starting TransactionServiceTest using Java 21.0.7 on pcRafa with PID 30216 (started by rafae in C:\Users\rafae\Downloads\t2_verival\t2_verival)
+2026-07-09 22:05:15.326  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : The following 1 profile is active: &quot;test&quot;
+2026-07-09 22:05:15.877  INFO 30216 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:1155082f-5698-4018-a247-9d3b7e3a31c1;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2026-07-09 22:05:16.807  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : Started TransactionServiceTest in 1.548 seconds (JVM running for 150.072)
+2026-07-09 22:05:16.901  INFO 30216 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Shutting down embedded database: url='jdbc:h2:mem:1155082f-5698-4018-a247-9d3b7e3a31c1;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false'
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.6.7)
+
+2026-07-09 22:05:16.967  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : Starting TransactionServiceTest using Java 21.0.7 on pcRafa with PID 30216 (started by rafae in C:\Users\rafae\Downloads\t2_verival\t2_verival)
+2026-07-09 22:05:16.968  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : The following 1 profile is active: &quot;test&quot;
+2026-07-09 22:05:17.661  INFO 30216 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:13840969-88f6-46d0-9ba3-0a69df04cf09;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2026-07-09 22:05:18.729  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : Started TransactionServiceTest in 1.82 seconds (JVM running for 151.995)
+2026-07-09 22:05:18.784  INFO 30216 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Shutting down embedded database: url='jdbc:h2:mem:13840969-88f6-46d0-9ba3-0a69df04cf09;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false'
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.6.7)
+
+2026-07-09 22:05:18.802  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : Starting TransactionServiceTest using Java 21.0.7 on pcRafa with PID 30216 (started by rafae in C:\Users\rafae\Downloads\t2_verival\t2_verival)
+2026-07-09 22:05:18.802  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : The following 1 profile is active: &quot;test&quot;
+2026-07-09 22:05:19.341  INFO 30216 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:ba8ccb14-a231-4435-82e9-34e302676d98;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2026-07-09 22:05:20.413  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : Started TransactionServiceTest in 1.626 seconds (JVM running for 153.678)
+2026-07-09 22:05:20.428  INFO 30216 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Shutting down embedded database: url='jdbc:h2:mem:ba8ccb14-a231-4435-82e9-34e302676d98;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false'
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.6.7)
+
+2026-07-09 22:05:20.511  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : Starting TransactionServiceTest using Java 21.0.7 on pcRafa with PID 30216 (started by rafae in C:\Users\rafae\Downloads\t2_verival\t2_verival)
+2026-07-09 22:05:20.511  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : The following 1 profile is active: &quot;test&quot;
+2026-07-09 22:05:21.229  INFO 30216 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:6dc987cc-d239-4c49-8b12-1d0b52cd03f9;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2026-07-09 22:05:22.356  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : Started TransactionServiceTest in 1.926 seconds (JVM running for 155.622)
+2026-07-09 22:05:22.438  INFO 30216 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Shutting down embedded database: url='jdbc:h2:mem:6dc987cc-d239-4c49-8b12-1d0b52cd03f9;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false'
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.6.7)
+
+2026-07-09 22:05:22.539  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : Starting TransactionServiceTest using Java 21.0.7 on pcRafa with PID 30216 (started by rafae in C:\Users\rafae\Downloads\t2_verival\t2_verival)
+2026-07-09 22:05:22.541  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : The following 1 profile is active: &quot;test&quot;
+2026-07-09 22:05:23.270  INFO 30216 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:a0409fc5-38e8-493b-9dfa-b9106c40c473;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2026-07-09 22:05:24.312  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : Started TransactionServiceTest in 1.867 seconds (JVM running for 157.577)
+2026-07-09 22:05:24.325  INFO 30216 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Shutting down embedded database: url='jdbc:h2:mem:a0409fc5-38e8-493b-9dfa-b9106c40c473;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false'
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.6.7)
+
+2026-07-09 22:05:24.376  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : Starting TransactionServiceTest using Java 21.0.7 on pcRafa with PID 30216 (started by rafae in C:\Users\rafae\Downloads\t2_verival\t2_verival)
+2026-07-09 22:05:24.378  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : The following 1 profile is active: &quot;test&quot;
+2026-07-09 22:05:24.994  INFO 30216 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:922db1ce-b7c1-47c3-b825-a40bbeb3767a;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2026-07-09 22:05:26.216  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : Started TransactionServiceTest in 1.884 seconds (JVM running for 159.482)
+2026-07-09 22:05:26.251  INFO 30216 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Shutting down embedded database: url='jdbc:h2:mem:922db1ce-b7c1-47c3-b825-a40bbeb3767a;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false'
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.6.7)
+
+2026-07-09 22:05:26.292  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : Starting TransactionServiceTest using Java 21.0.7 on pcRafa with PID 30216 (started by rafae in C:\Users\rafae\Downloads\t2_verival\t2_verival)
+2026-07-09 22:05:26.292  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : The following 1 profile is active: &quot;test&quot;
+2026-07-09 22:05:26.936  INFO 30216 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:e6a0fa83-6ee3-431e-bea3-4d6f08b8e27e;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2026-07-09 22:05:28.249  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : Started TransactionServiceTest in 1.993 seconds (JVM running for 161.514)
+2026-07-09 22:05:28.283  INFO 30216 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Shutting down embedded database: url='jdbc:h2:mem:e6a0fa83-6ee3-431e-bea3-4d6f08b8e27e;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false'
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.6.7)
+
+2026-07-09 22:05:28.374  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : Starting TransactionServiceTest using Java 21.0.7 on pcRafa with PID 30216 (started by rafae in C:\Users\rafae\Downloads\t2_verival\t2_verival)
+2026-07-09 22:05:28.375  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : The following 1 profile is active: &quot;test&quot;
+2026-07-09 22:05:29.055  INFO 30216 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:282a4b93-f7b2-49a0-b385-9b3f95676a75;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2026-07-09 22:05:30.505  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : Started TransactionServiceTest in 2.215 seconds (JVM running for 163.771)
+2026-07-09 22:05:30.543  INFO 30216 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Shutting down embedded database: url='jdbc:h2:mem:282a4b93-f7b2-49a0-b385-9b3f95676a75;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false'
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.6.7)
+
+2026-07-09 22:05:30.605  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : Starting TransactionServiceTest using Java 21.0.7 on pcRafa with PID 30216 (started by rafae in C:\Users\rafae\Downloads\t2_verival\t2_verival)
+2026-07-09 22:05:30.606  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : The following 1 profile is active: &quot;test&quot;
+2026-07-09 22:05:31.482  INFO 30216 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:d84f7102-af10-4224-a131-5293d5c8531d;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2026-07-09 22:05:32.710  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : Started TransactionServiceTest in 2.16 seconds (JVM running for 165.975)
+2026-07-09 22:05:32.749  INFO 30216 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Shutting down embedded database: url='jdbc:h2:mem:d84f7102-af10-4224-a131-5293d5c8531d;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false'
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.6.7)
+
+2026-07-09 22:05:32.792  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : Starting TransactionServiceTest using Java 21.0.7 on pcRafa with PID 30216 (started by rafae in C:\Users\rafae\Downloads\t2_verival\t2_verival)
+2026-07-09 22:05:32.793  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : The following 1 profile is active: &quot;test&quot;
+2026-07-09 22:05:33.289  INFO 30216 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:2d4e4c7b-4cbf-4836-8fb5-dab996b3c010;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2026-07-09 22:05:34.321  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : Started TransactionServiceTest in 1.563 seconds (JVM running for 167.587)
+2026-07-09 22:05:34.356  INFO 30216 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Shutting down embedded database: url='jdbc:h2:mem:2d4e4c7b-4cbf-4836-8fb5-dab996b3c010;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false'
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.6.7)
+
+2026-07-09 22:05:34.393  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : Starting TransactionServiceTest using Java 21.0.7 on pcRafa with PID 30216 (started by rafae in C:\Users\rafae\Downloads\t2_verival\t2_verival)
+2026-07-09 22:05:34.394  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : The following 1 profile is active: &quot;test&quot;
+2026-07-09 22:05:35.041  INFO 30216 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:853ac2fe-57e8-45ab-a194-204c40de0421;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2026-07-09 22:05:36.324  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : Started TransactionServiceTest in 1.957 seconds (JVM running for 169.589)
+2026-07-09 22:05:36.365  INFO 30216 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Shutting down embedded database: url='jdbc:h2:mem:853ac2fe-57e8-45ab-a194-204c40de0421;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false'
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.6.7)
+
+2026-07-09 22:05:36.439  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : Starting TransactionServiceTest using Java 21.0.7 on pcRafa with PID 30216 (started by rafae in C:\Users\rafae\Downloads\t2_verival\t2_verival)
+2026-07-09 22:05:36.440  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : The following 1 profile is active: &quot;test&quot;
+2026-07-09 22:05:37.181  INFO 30216 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:03cca383-5b9d-403f-a0e4-e1a0dfa085ff;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2026-07-09 22:05:38.321  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : Started TransactionServiceTest in 1.944 seconds (JVM running for 171.586)
+2026-07-09 22:05:38.339  INFO 30216 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Shutting down embedded database: url='jdbc:h2:mem:03cca383-5b9d-403f-a0e4-e1a0dfa085ff;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false'
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.6.7)
+
+2026-07-09 22:05:38.370  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : Starting TransactionServiceTest using Java 21.0.7 on pcRafa with PID 30216 (started by rafae in C:\Users\rafae\Downloads\t2_verival\t2_verival)
+2026-07-09 22:05:38.372  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : The following 1 profile is active: &quot;test&quot;
+2026-07-09 22:05:39.444  INFO 30216 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:38ff5862-8951-44b7-a2dc-f3a17387fbd0;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2026-07-09 22:05:40.482  INFO 30216 --- [    Test worker] c.e.bank.service.TransactionServiceTest  : Started TransactionServiceTest in 2.139 seconds (JVM running for 173.747)
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.4.1</a> at 9 de jul. de 2026 22:05:41</p>
+</div>
+</div>
+</body>
+</html>

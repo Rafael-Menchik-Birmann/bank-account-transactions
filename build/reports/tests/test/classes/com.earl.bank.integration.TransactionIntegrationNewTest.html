@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - TransactionIntegrationNewTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>TransactionIntegrationNewTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.earl.bank.integration.html">com.earl.bank.integration</a> &gt; TransactionIntegrationNewTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">3</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">8.359s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Method name</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">CT-INTEGRACAO-03: Apenas um saque deve ser aprovado em operacoes concorrentes</td>
+<td class="success">apenasUmSaqueDeveSerAprovadoEmConcorrencia()</td>
+<td class="success">2.892s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">CT-INTEGRACAO-02: Historico deve conter todas as transacoes e saldo deve ser consistente</td>
+<td class="success">historicoDeveRefletirTodasAsTransacoes()</td>
+<td class="success">3.063s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">CT-INTEGRACAO-01: Saldo nao deve ser alterado apos falha por saldo insuficiente</td>
+<td class="success">saldoNaoDeveSerAlteradoAposFalhaPorSaldoInsuficiente()</td>
+<td class="success">2.404s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2026-07-09 22:03:49.414  INFO 30216 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.earl.bank.integration.TransactionIntegrationNewTest], using SpringBootContextLoader
+2026-07-09 22:03:49.415  INFO 30216 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.earl.bank.integration.TransactionIntegrationNewTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2026-07-09 22:03:49.415  INFO 30216 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.earl.bank.integration.TransactionIntegrationNewTest]: TransactionIntegrationNewTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-07-09 22:03:49.416  INFO 30216 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.earl.bank.BankApplication for test class com.earl.bank.integration.TransactionIntegrationNewTest
+2026-07-09 22:03:49.418  INFO 30216 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2026-07-09 22:03:49.418  INFO 30216 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5d8cbb32, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@46aa5294, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@283645fa, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@70a81b4e, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@48c56b42, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5c6fae3c, org.springframework.test.context.transaction.TransactionalTestExecutionListener@466c39de, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@762e3836, org.springframework.test.context.event.EventPublishingTestExecutionListener@15d2c2ca, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@346d8002, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1368ed98, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@1400984b, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@17c7cc93, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@4ff233f9, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1b2213b2]
+2026-07-09 22:03:49.422  INFO 30216 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Shutting down embedded database: url='jdbc:h2:mem:ca7f41ed-5cbb-4bbc-bfe9-14a9d08a25a7;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false'
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.6.7)
+
+2026-07-09 22:03:49.522  INFO 30216 --- [    Test worker] c.e.b.i.TransactionIntegrationNewTest    : Starting TransactionIntegrationNewTest using Java 21.0.7 on pcRafa with PID 30216 (started by rafae in C:\Users\rafae\Downloads\t2_verival\t2_verival)
+2026-07-09 22:03:49.523  INFO 30216 --- [    Test worker] c.e.b.i.TransactionIntegrationNewTest    : The following 1 profile is active: &quot;test&quot;
+2026-07-09 22:03:50.218  INFO 30216 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:e39c408a-907a-4bf4-ab9b-84cd10df003e;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2026-07-09 22:03:51.606  INFO 30216 --- [    Test worker] c.e.b.i.TransactionIntegrationNewTest    : Started TransactionIntegrationNewTest in 2.181 seconds (JVM running for 64.872)
+2026-07-09 22:03:51.835  INFO 30216 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Shutting down embedded database: url='jdbc:h2:mem:e39c408a-907a-4bf4-ab9b-84cd10df003e;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false'
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.6.7)
+
+2026-07-09 22:03:51.914  INFO 30216 --- [    Test worker] c.e.b.i.TransactionIntegrationNewTest    : Starting TransactionIntegrationNewTest using Java 21.0.7 on pcRafa with PID 30216 (started by rafae in C:\Users\rafae\Downloads\t2_verival\t2_verival)
+2026-07-09 22:03:51.915  INFO 30216 --- [    Test worker] c.e.b.i.TransactionIntegrationNewTest    : The following 1 profile is active: &quot;test&quot;
+2026-07-09 22:03:52.894  INFO 30216 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:47ee663e-6192-4e4d-8953-943bbc1e8f8a;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2026-07-09 22:03:54.427  INFO 30216 --- [    Test worker] c.e.b.i.TransactionIntegrationNewTest    : Started TransactionIntegrationNewTest in 2.588 seconds (JVM running for 67.692)
+2026-07-09 22:03:54.740  INFO 30216 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Shutting down embedded database: url='jdbc:h2:mem:47ee663e-6192-4e4d-8953-943bbc1e8f8a;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false'
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.6.7)
+
+2026-07-09 22:03:54.801  INFO 30216 --- [    Test worker] c.e.b.i.TransactionIntegrationNewTest    : Starting TransactionIntegrationNewTest using Java 21.0.7 on pcRafa with PID 30216 (started by rafae in C:\Users\rafae\Downloads\t2_verival\t2_verival)
+2026-07-09 22:03:54.803  INFO 30216 --- [    Test worker] c.e.b.i.TransactionIntegrationNewTest    : The following 1 profile is active: &quot;test&quot;
+2026-07-09 22:03:55.792  INFO 30216 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:fb6b4897-b8f1-4b90-9e8e-e4e4e255beba;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2026-07-09 22:03:57.662  INFO 30216 --- [    Test worker] c.e.b.i.TransactionIntegrationNewTest    : Started TransactionIntegrationNewTest in 2.912 seconds (JVM running for 70.928)
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.4.1</a> at 9 de jul. de 2026 22:05:41</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by net.rubygrapefruit.platform.internal.NativeLibraryLoader in an unnamed module (file:/Users/samanthamartins/.gradle/wrapper/dists/gradle-7.4.1-bin/58kw26xllvsiedyf3nujyarhn/gradle-7.4.1/lib/native-platform-0.22-milestone-23.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+> Task :compileJava UP-TO-DATE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.apache.tomcat.jni.Library in an unnamed module (file:/Users/samanthamartins/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/9.0.62/5cfba48171140b53d53f730633cc6310fa63e12/tomcat-embed-core-9.0.62.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+
+TransactionServiceNewTest > CT-UNITARIO-02: Transacao com valor zero deve lancar InvalidAmountException FAILED
+    org.opentest4j.AssertionFailedError at TransactionServiceNewTest.java:94
+
+AOPLoggingTest > afterCreateTransaction() FAILED
+    org.opentest4j.AssertionFailedError at AOPLoggingTest.java:90
+2026-07-09 13:31:05.021  INFO 24082 --- [ionShutdownHook] o.s.j.d.e.EmbeddedDatabaseFactory        : Shutting down embedded database: url='jdbc:h2:mem:7db97793-d549-401d-900f-92ce41b4dc4b;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false'
+2026-07-09 13:31:05.022  INFO 24082 --- [ionShutdownHook] o.s.j.d.e.EmbeddedDatabaseFactory        : Shutting down embedded database: url='jdbc:h2:mem:cd6a2fa9-77af-420a-a2c3-9492ccbea7db;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false'
+
+59 tests completed, 2 failed, 1 skipped
+
+> Task :test FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':test'.
+> There were failing tests. See the report at: file:///Users/samanthamartins/IdeaProjects/bank-account-transactions/build/reports/tests/test/index.html
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 13s
+4 actionable tasks: 2 executed, 2 up-to-date
